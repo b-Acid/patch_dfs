@@ -111,7 +111,7 @@ CONFIG=configs/sparse/imagenette_token.yaml RUN_NAME=imagenette_token \
 for m in 1 2 4; do
   python -m patchdfs.dime.eval --config configs/sparse/imagenette_token.yaml \
     --ckpt artifacts/dime/imagenette_token/seed0/final.pt \
-    --run-dir artifacts/dime/imagenette_token/seed0 --data-root "${PATCHDFS_DATA:-data}" \\
+    --run-dir artifacts/dime/imagenette_token/seed0 --data-root "${PATCHDFS_DATA:-data}" \
     --multi $m --tag multi$m
 done
 ```
