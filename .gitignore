@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+
+# datasets and run artefacts (see docs/REPRODUCE.md)
+data/
+artifacts/
+tmp/
+*.npz
+*.pt
+*.pth
+*.log
+
+# keep the one selection archive used by the concept figure
+!results/sparse/imagenette_onepass_g4/seed0/test_kept.npz
+
+# upstream tabular datasets are unrelated to the image experiments
+third_party/dynamic-selection/datasets/
+
+# LaTeX build products
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
+
+.DS_Store
+
+# training logs
+*.jsonl

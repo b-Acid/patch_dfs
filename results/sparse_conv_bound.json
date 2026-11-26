@@ -1,0 +1,345 @@
+{
+ "layers": [
+  {
+   "name": "stem",
+   "res": 32,
+   "r": 1.0,
+   "macs": 1769472.0
+  },
+  {
+   "name": "stage1.conv1",
+   "res": 32,
+   "r": 2.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "stage1.conv2",
+   "res": 32,
+   "r": 3.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "stage2.conv1",
+   "res": 16,
+   "r": 4.0,
+   "macs": 4718592.0
+  },
+  {
+   "name": "stage2.conv2",
+   "res": 16,
+   "r": 6.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "stage2.shortcut",
+   "res": 16,
+   "r": 3.0,
+   "macs": 524288.0
+  },
+  {
+   "name": "stage3.conv1",
+   "res": 8,
+   "r": 8.0,
+   "macs": 4718592.0
+  },
+  {
+   "name": "stage3.conv2",
+   "res": 8,
+   "r": 12.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "stage3.shortcut",
+   "res": 8,
+   "r": 6.0,
+   "macs": 524288.0
+  },
+  {
+   "name": "stage4.conv1",
+   "res": 4,
+   "r": 16.0,
+   "macs": 4718592.0
+  },
+  {
+   "name": "stage4.conv2",
+   "res": 4,
+   "r": 24.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "stage4.shortcut",
+   "res": 4,
+   "r": 12.0,
+   "macs": 524288.0
+  },
+  {
+   "name": "sel.up.convT",
+   "res": 8,
+   "r": 32.0,
+   "macs": 134217728.0
+  },
+  {
+   "name": "sel.up.conv",
+   "res": 8,
+   "r": 36.0,
+   "macs": 37748736.0
+  },
+  {
+   "name": "sel.up.shortcut",
+   "res": 8,
+   "r": 24.0,
+   "macs": 33554432.0
+  },
+  {
+   "name": "sel.out",
+   "res": 8,
+   "r": 36.0,
+   "macs": 16384.0
+  }
+ ],
+ "per_budget": {
+  "1": {
+   "layer_active_fraction": {
+    "stem": 0.0478515625,
+    "stage1.conv1": 0.0791015625,
+    "stage1.conv2": 0.1181640625,
+    "stage2.conv1": 0.140625,
+    "stage2.conv2": 0.25,
+    "stage2.shortcut": 0.09765625,
+    "stage3.conv1": 0.390625,
+    "stage3.conv2": 0.765625,
+    "stage3.shortcut": 0.25,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.5625,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 296858304.0,
+   "selector_pass_saving": 0.27908355672820595,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 91321024.0,
+   "predictor_pass_saving": 0.5572137775063553,
+   "gdfs_inference_saving": 0.3718993150367169
+  },
+  "2": {
+   "layer_active_fraction": {
+    "stem": 0.096736328125,
+    "stage1.conv1": 0.1501328125,
+    "stage1.conv2": 0.2048203125,
+    "stage2.conv1": 0.23509375,
+    "stage2.conv2": 0.366828125,
+    "stage2.shortcut": 0.1765,
+    "stage3.conv1": 0.5253671875,
+    "stage3.conv2": 0.839015625,
+    "stage3.shortcut": 0.3579375,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.6883125,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 311323267.456,
+   "selector_pass_saving": 0.2439555853484463,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 105785987.456,
+   "predictor_pass_saving": 0.4870778302003893,
+   "gdfs_inference_saving": 0.29264656473235606
+  },
+  "3": {
+   "layer_active_fraction": {
+    "stem": 0.1589150390625,
+    "stage1.conv1": 0.23372265625,
+    "stage1.conv2": 0.3023681640625,
+    "stage2.conv1": 0.3394375,
+    "stage2.conv2": 0.4865625,
+    "stage2.shortcut": 0.267203125,
+    "stage3.conv1": 0.6545546875,
+    "stage3.conv2": 0.8954921875,
+    "stage3.shortcut": 0.4666015625,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.79246875,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 326183822.528,
+   "selector_pass_saving": 0.20786692499030157,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 120646542.528,
+   "predictor_pass_saving": 0.4150237866048022,
+   "gdfs_inference_saving": 0.23750415064867536
+  },
+  "5": {
+   "layer_active_fraction": {
+    "stem": 0.3203515625,
+    "stage1.conv1": 0.4276005859375,
+    "stage1.conv2": 0.51276904296875,
+    "stage2.conv1": 0.5572421875,
+    "stage2.conv2": 0.71105859375,
+    "stage2.shortcut": 0.470060546875,
+    "stage3.conv1": 0.8804609375,
+    "stage3.conv2": 0.983125,
+    "stage3.shortcut": 0.6716796875,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.96625,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 355911643.648,
+   "selector_pass_saving": 0.13567330675804723,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 150374363.648,
+   "predictor_pass_saving": 0.2708831600532253,
+   "gdfs_inference_saving": 0.14798422683413737
+  },
+  "7": {
+   "layer_active_fraction": {
+    "stem": 0.42992236328125,
+    "stage1.conv1": 0.5359482421875,
+    "stage1.conv2": 0.62697021484375,
+    "stage2.conv1": 0.672546875,
+    "stage2.conv2": 0.81003125,
+    "stage2.shortcut": 0.582892578125,
+    "stage3.conv1": 0.9577734375,
+    "stage3.conv2": 0.9976875,
+    "stage3.shortcut": 0.7611796875,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.995375,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 369822503.776,
+   "selector_pass_saving": 0.10189096794117791,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 164285223.776,
+   "predictor_pass_saving": 0.2034338812571993,
+   "gdfs_inference_saving": 0.10867130410263681
+  },
+  "10": {
+   "layer_active_fraction": {
+    "stem": 0.56473583984375,
+    "stage1.conv1": 0.66436376953125,
+    "stage1.conv2": 0.7588544921875,
+    "stage2.conv1": 0.80340625,
+    "stage2.conv2": 0.896193359375,
+    "stage2.shortcut": 0.7154296875,
+    "stage3.conv1": 0.9924375,
+    "stage3.conv2": 0.999875,
+    "stage3.shortcut": 0.839015625,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 0.99975,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 384115754.528,
+   "selector_pass_saving": 0.06717999857943247,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 178578474.52800003,
+   "predictor_pass_saving": 0.13413051352850913,
+   "gdfs_inference_saving": 0.07037331272313996
+  },
+  "15": {
+   "layer_active_fraction": {
+    "stem": 0.73878173828125,
+    "stage1.conv1": 0.82524755859375,
+    "stage1.conv2": 0.9117900390625,
+    "stage2.conv1": 0.9498125,
+    "stage2.conv2": 0.974796875,
+    "stage2.shortcut": 0.8742890625,
+    "stage3.conv1": 0.9998125,
+    "stage3.conv2": 1.0,
+    "stage3.shortcut": 0.9538125,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 1.0,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 400111145.824,
+   "selector_pass_saving": 0.028335403543772175,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 194573865.824,
+   "predictor_pass_saving": 0.05657401471763779,
+   "gdfs_inference_saving": 0.02924783462381575
+  },
+  "20": {
+   "layer_active_fraction": {
+    "stem": 0.8634931640625,
+    "stage1.conv1": 0.91659033203125,
+    "stage1.conv2": 0.9691923828125,
+    "stage2.conv1": 0.9933125,
+    "stage2.conv2": 0.99665625,
+    "stage2.shortcut": 0.94517578125,
+    "stage3.conv1": 1.0,
+    "stage3.conv2": 1.0,
+    "stage3.shortcut": 0.9934375,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 1.0,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 407036006.59199995,
+   "selector_pass_saving": 0.011518471264124974,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 201498726.592,
+   "predictor_pass_saving": 0.022997595986753216,
+   "gdfs_inference_saving": 0.011798917228026728
+  },
+  "30": {
+   "layer_active_fraction": {
+    "stem": 0.98058740234375,
+    "stage1.conv1": 0.98902392578125,
+    "stage1.conv2": 0.99692431640625,
+    "stage2.conv1": 0.999875,
+    "stage2.conv2": 0.9999375,
+    "stage2.shortcut": 0.993978515625,
+    "stage3.conv1": 1.0,
+    "stage3.conv2": 1.0,
+    "stage3.shortcut": 0.9999375,
+    "stage4.conv1": 1.0,
+    "stage4.conv2": 1.0,
+    "stage4.shortcut": 1.0,
+    "sel.up.convT": 1.0,
+    "sel.up.conv": 1.0,
+    "sel.up.shortcut": 1.0,
+    "sel.out": 1.0
+   },
+   "dense_selector_pass_macs": 411779072.0,
+   "sparse_selector_pass_macs": 411208146.976,
+   "selector_pass_saving": 0.0013864838279105118,
+   "dense_predictor_pass_macs": 206241792.0,
+   "sparse_predictor_pass_macs": 205670866.976,
+   "predictor_pass_saving": 0.0027682314940319364,
+   "gdfs_inference_saving": 0.0014091735471838396
+  }
+ }
+}

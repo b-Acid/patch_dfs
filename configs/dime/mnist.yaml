@@ -1,0 +1,15 @@
+# DIME on MNIST, authors' settings (experiments/MNIST/greedy_cmi_estimation_pl.py).
+dataset: mnist
+data_root: data                 # override with --data-root / PATCHDFS_DATA
+model: {kind: mlp, hidden: 512, dropout: 0.3, append_mask: true}
+batch_size: 128
+eval_batch_size: 1024
+num_workers: 4
+amp: null
+max_features: 50
+pretrain: {lr: 1.0e-3, nepochs: 200, patience: 2, min_lr: 1.0e-6}
+fit: {lr: 1.0e-3, min_lr: 1.0e-6, eps: 0.05, eps_decay: 0.2, eps_steps: 10, patience: 5, max_epochs: 200, cuda_graph: true}
+eval:
+  budgets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 20, 25, 30, 40, 50]
+  lams: [0.005, 0.01, 0.015, 0.02, 0.03, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3, 0.5, 1.0]
+  confidences: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]

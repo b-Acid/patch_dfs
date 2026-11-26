@@ -1,0 +1,14 @@
+# Single-pass dynamic token selection (our variant): the first 2 of 12 blocks see all 196 patches,
+# the rest run on CLS + the top-k patches by CLS attention + one fused token for the dropped patches.
+# One forward pass per image at every budget; see src/patchdfs/sparse/onepass.py.
+# Data, backbone and batch size are those of configs/dime/imagenette.yaml; the teacher is the dense
+# DIME predictor of that config trained in artifacts/dime/imagenette/seed0.
+dataset: imagenette
+data_root: data                 # override with --data-root / PATCHDFS_DATA
+model: {kind: onepass, name: vit_small_patch16_224, pretrained: true, mask_width: 14, patch_size: 16}
+batch_size: 32
+eval_batch_size: 64
+num_workers: 8
+amp: bfloat16
+eval:
+  budgets: [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 75, 100, 150, 196]

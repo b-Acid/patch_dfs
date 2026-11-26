@@ -1,0 +1,53 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "data_root": "/data/liu_weihan/data/patchdfs",
+    "model": {
+      "kind": "mlp",
+      "hidden": 512,
+      "dropout": 0.3,
+      "append_mask": true
+    },
+    "batch_size": 128,
+    "eval_batch_size": 1024,
+    "num_workers": 4,
+    "amp": null,
+    "max_features": 50,
+    "pretrain": {
+      "lr": 0.001,
+      "nepochs": 100,
+      "patience": 5,
+      "min_lr": 1e-06
+    },
+    "fit": {
+      "lr": 0.001,
+      "nepochs": 250,
+      "scheduler_patience": 5,
+      "early_stop_patience": 7,
+      "min_lr": 1e-06,
+      "temps": {
+        "start": 1.0,
+        "end": 0.1,
+        "steps": 5
+      },
+      "cuda_graph": true
+    },
+    "eval_budgets": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ]
+  },
+  "seed": 0,
+  "smoke": false
+}

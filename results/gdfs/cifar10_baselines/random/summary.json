@@ -1,0 +1,77 @@
+{
+  "method": "random",
+  "seed": 0,
+  "results": {
+    "1": {
+      "test_acc": 0.1689,
+      "epochs": 71,
+      "sec": 252.8
+    },
+    "2": {
+      "test_acc": 0.1703,
+      "epochs": 76,
+      "sec": 262.8
+    },
+    "3": {
+      "test_acc": 0.2129,
+      "epochs": 69,
+      "sec": 236.0
+    },
+    "4": {
+      "test_acc": 0.4126,
+      "epochs": 56,
+      "sec": 192.8
+    },
+    "5": {
+      "test_acc": 0.2468,
+      "epochs": 71,
+      "sec": 236.3
+    },
+    "6": {
+      "test_acc": 0.2972,
+      "epochs": 63,
+      "sec": 213.8
+    },
+    "7": {
+      "test_acc": 0.3462,
+      "epochs": 52,
+      "sec": 175.5
+    },
+    "8": {
+      "test_acc": 0.3936,
+      "epochs": 51,
+      "sec": 178.5
+    },
+    "9": {
+      "test_acc": 0.4483,
+      "epochs": 55,
+      "sec": 193.3
+    },
+    "10": {
+      "test_acc": 0.5953,
+      "epochs": 74,
+      "sec": 241.3
+    },
+    "15": {
+      "test_acc": 0.5014,
+      "epochs": 47,
+      "sec": 156.5
+    },
+    "20": {
+      "test_acc": 0.7148,
+      "epochs": 48,
+      "sec": 158.2
+    },
+    "25": {
+      "test_acc": 0.7115,
+      "epochs": 55,
+      "sec": 179.3
+    },
+    "30": {
+      "test_acc": 0.7675,
+      "epochs": 43,
+      "sec": 149.2
+    }
+  },
+  "total_hours": 0.785
+}

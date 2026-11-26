@@ -1,0 +1,6 @@
+{
+  "method": "random",
+  "seed": 0,
+  "amp": "bfloat16",
+  "budgets": null
+}

@@ -1,0 +1,77 @@
+{
+  "method": "cae",
+  "seed": 0,
+  "results": {
+    "1": {
+      "test_acc": 0.1434,
+      "epochs": 73,
+      "sec": 2411.5
+    },
+    "2": {
+      "test_acc": 0.1803,
+      "epochs": 78,
+      "sec": 3096.5
+    },
+    "3": {
+      "test_acc": 0.3903,
+      "epochs": 69,
+      "sec": 1994.5
+    },
+    "4": {
+      "test_acc": 0.4085,
+      "epochs": 47,
+      "sec": 1843.4
+    },
+    "5": {
+      "test_acc": 0.5035,
+      "epochs": 87,
+      "sec": 1894.5
+    },
+    "6": {
+      "test_acc": 0.3978,
+      "epochs": 61,
+      "sec": 1598.4
+    },
+    "7": {
+      "test_acc": 0.5705,
+      "epochs": 63,
+      "sec": 1324.7
+    },
+    "8": {
+      "test_acc": 0.5627,
+      "epochs": 66,
+      "sec": 1370.1
+    },
+    "9": {
+      "test_acc": 0.5112,
+      "epochs": 71,
+      "sec": 1329.6
+    },
+    "10": {
+      "test_acc": 0.5461,
+      "epochs": 65,
+      "sec": 1251.1
+    },
+    "15": {
+      "test_acc": 0.7373,
+      "epochs": 63,
+      "sec": 1103.5
+    },
+    "20": {
+      "test_acc": 0.7876,
+      "epochs": 53,
+      "sec": 1185.8
+    },
+    "25": {
+      "test_acc": 0.8398,
+      "epochs": 45,
+      "sec": 1196.1
+    },
+    "30": {
+      "test_acc": 0.8555,
+      "epochs": 32,
+      "sec": 1154.1
+    }
+  },
+  "total_hours": 6.321
+}

@@ -1,0 +1,19 @@
+# GDFS on MNIST, authors' settings (experiments/mnist/run.py, method=greedy).
+dataset: mnist
+data_root: data                 # override with --data-root / PATCHDFS_DATA
+model: {kind: mlp, hidden: 512, dropout: 0.3, append_mask: true}
+batch_size: 128
+eval_batch_size: 1024
+num_workers: 4
+amp: null
+max_features: 50
+pretrain: {lr: 1.0e-3, nepochs: 100, patience: 5, min_lr: 1.0e-6}
+fit:
+  lr: 1.0e-3
+  nepochs: 250
+  scheduler_patience: 5
+  early_stop_patience: 7       # authors: stop when num_bad_epochs > patience + 1
+  min_lr: 1.0e-6
+  temps: {start: 1.0, end: 0.1, steps: 5}
+  cuda_graph: true            # whole 50-step iteration captured in one CUDA graph (same semantics)
+eval_budgets: [5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100]

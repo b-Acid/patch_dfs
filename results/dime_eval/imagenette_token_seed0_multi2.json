@@ -1,0 +1,119 @@
+{
+ "config": {
+  "dataset": "imagenette",
+  "data_root": "/data/liu_weihan/data/patchdfs",
+  "model": {
+   "kind": "vit_token_dropped",
+   "name": "vit_small_patch16_224",
+   "pretrained": true,
+   "mask_width": 14,
+   "patch_size": 16
+  },
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "num_workers": 8,
+  "amp": "bfloat16",
+  "max_features": 50,
+  "pretrain": {
+   "lr": 1e-05,
+   "nepochs": 50,
+   "patience": 2,
+   "min_lr": 1e-06
+  },
+  "fit": {
+   "lr": 1e-05,
+   "min_lr": 1e-08,
+   "eps": 0.05,
+   "eps_decay": 0.2,
+   "eps_steps": 10,
+   "patience": 3,
+   "max_epochs": 250
+  },
+  "eval": {
+   "budgets": [
+    2,
+    4,
+    8,
+    12,
+    16,
+    20
+   ],
+   "lams": [
+    0.01,
+    0.013,
+    0.018,
+    0.024,
+    0.032,
+    0.042,
+    0.056,
+    0.075,
+    0.1,
+    0.133,
+    0.178,
+    0.237,
+    0.3
+   ],
+   "confidences": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+   ]
+  }
+ },
+ "ckpt": "artifacts/dime/imagenette_token/seed0/final.pt",
+ "results": {
+  "budget": [
+   {
+    "param": 2,
+    "avg_features": 2.0,
+    "acc": 0.38369426751592356,
+    "passes": 124,
+    "multi": 2
+   },
+   {
+    "param": 4,
+    "avg_features": 4.0,
+    "acc": 0.6871337579617834,
+    "passes": 186,
+    "multi": 2
+   },
+   {
+    "param": 8,
+    "avg_features": 8.0,
+    "acc": 0.8201273885350319,
+    "passes": 310,
+    "multi": 2
+   },
+   {
+    "param": 12,
+    "avg_features": 12.0,
+    "acc": 0.867515923566879,
+    "passes": 434,
+    "multi": 2
+   },
+   {
+    "param": 16,
+    "avg_features": 16.0,
+    "acc": 0.8858598726114649,
+    "passes": 558,
+    "multi": 2
+   },
+   {
+    "param": 20,
+    "avg_features": 20.0,
+    "acc": 0.9090445859872611,
+    "passes": 682,
+    "multi": 2
+   }
+  ],
+  "penalized": [],
+  "confidence": []
+ },
+ "timestamp": "2026-11-26 11:22:06"
+}
